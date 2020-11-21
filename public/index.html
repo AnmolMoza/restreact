@@ -1,101 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-85XZVT828J"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-85XZVT828J');
+    </script>
+
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Restraunt Website"
-    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>About Cafe Another Day | Story of Best Party Place in Janakuri, New Delhi</title>
-        <!-- jQUERY -->
-		    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- jQUERY -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- BOOTSTRAP JS -->
+		<script src="vendor/bootstrap/bootstrap.min.js"></script>
+    <!-- Slider Revolution core JavaScript files -->
+    <script src="vendor/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="vendor/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.actions.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.carousel.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.kenburn.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.migration.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.navigation.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.parallax.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.slideanims.min.js"></script>
+    <script src="vendor/revolution-slider/js/revolution.extension.video.min.js"></script>
+    <!-- MAP JS-->
+		<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script> -->
+		<script src="js/theme-map.js"></script>
+    <!-- CAROUSEL JS -->
+		<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- SIDENAV MOBILE -->
+		<script src="vendor/hcmobilenav/hc-mobile-nav.js"></script>
+		<!-- JQUERY UI -->
+		<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <!-- DATE-PICKER -->
+    <script src="vendor/date-picker/datepicker.js"></script>
+    <script src="vendor/date-picker/datepicker.en.js"></script>
+    <!-- JQUERY TIMEPICKER -->
+    <script src="vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script>
+    <!-- WOW -->
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- LINEARICONS -->
+    <link rel="stylesheet" href="fonts/linearicons/style.css"/>
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css"/>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css"/>
+    <!-- owl-carousel -->
+    <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css"/>
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="css/animate.css"/>
+	  <!-- DATE-PICKER -->
+		<link rel="stylesheet" href="vendor/date-picker/datepicker.min.css"/>
+	  <!-- SLIDER REVOLUTION -->
+    <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/layers.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/navigation.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/settings.css"/>
+    <!-- SIDENAV MOBILE -->
+    <link rel="stylesheet" href="vendor/hcmobilenav/demo.css"/>
+    <!-- JQUERY TIME PICKER -->
+    <link rel="stylesheet" href="vendor/jquery-timepicker-master/jquery.timepicker.css"/>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.webp"/>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-		    <!-- BOOTSTRAP JS -->
-		    <script src="vendor/bootstrap/bootstrap.min.js"></script>
-
-		    <!-- Slider Revolution core JavaScript files -->
-        <!-- <script src="vendor/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendor/revolution-slider/js/jquery.themepunch.tools.min.js"></script> -->
-
-        <!-- Slider Revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING --> 
-        <!-- <script src="vendor/revolution-slider/js/revolution.extension.actions.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.carousel.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.kenburn.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.layeranimation.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.migration.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.navigation.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.parallax.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.slideanims.min.js"></script>
-        <script src="vendor/revolution-slider/js/revolution.extension.video.min.js"></script> -->
-
-        <!-- MAP JS-->
-		    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script> -->
-		    <script src="js/theme-map.js"></script>
-
-		    <!-- CAROUSEL JS -->
-		    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
-
-		    <!-- SWEET ALERT -->
-		    <!-- <script src="js/sweetalert.min.js"></script> -->
-
-		    <!-- SIDENAV MOBILE -->
-		    <script src="vendor/hcmobilenav/hc-mobile-nav.js"></script>
-
-		    <!-- JQUERY UI -->
-		    <!-- <script src="vendor/jquery-ui/jquery-ui.min.js"></script> -->
-
-		    <!-- DATE-PICKER -->
-		    <!-- <script src="vendor/date-picker/datepicker.js"></script>
-		    <script src="vendor/date-picker/datepicker.en.js"></script> -->
-
-		    <!-- JQUERY TIMEPICKER -->
-		    <!-- <script src="vendor/jquery-timepicker-master/jquery.timepicker.min.js"></script> -->
-
-		    <!-- WOW -->
-        <!-- <script src="js/wow.min.js"></script>
-
-        <script src="js/main.min.js"></script> -->
-    
-        <!-- LINEARICONS -->
-		    <link rel="stylesheet" href="fonts/linearicons/style.css">
-
-		    <!-- MATERIAL DESIGN ICONIC FONT -->
-		    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
-
-	      <!-- BOOTSTRAP -->
-        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-
-	      <!-- owl-carousel -->
-	      <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
-	      <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css">
-
-	      <!-- ANIMATE -->
-	      <link rel="stylesheet" href="css/animate.css">
-
-	      <!-- DATE-PICKER -->
-		    <!-- <link rel="stylesheet" href="vendor/date-picker/datepicker.min.css"> -->
-		
-	      <!-- SLIDER REVOLUTION -->
-        <!-- <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/navigation.css">
-        <link rel="stylesheet" type="text/css" href="vendor/revolution-slider/css/settings.css"> -->
-
-        <!-- SIDENAV MOBILE -->
-        <link rel="stylesheet" href="vendor/hcmobilenav/demo.css">
-
-        <!-- JQUERY TIME PICKER -->
-        <!-- <link rel="stylesheet" href="vendor/jquery-timepicker-master/jquery.timepicker.css"> -->
-
-		    <!-- FAVICON -->
-        <link rel="shortcut icon" href="favicon.webp">
-
-	    <!-- STYLE CSS -->
-	    <link rel="stylesheet" href="css/style.css" />
   </head>
   
   <body>

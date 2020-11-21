@@ -1,9 +1,98 @@
-import React from 'react'
-import {Link, withRouter} from 'react-router-dom'
+import {React, Fragment} from 'react'
+import {Link} from 'react-router-dom'
+import { Helmet } from "react-helmet";
 
 const About = () => {
     return (
-        <>
+		<>
+	<Helmet>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Cafe Another Day is the perfect place to host all your celebrations & moods. Rejoice your loved one's birthday party or a romantic candlelight dinner with your Valentine at our cafe. Host your best friend's bachelor/bachelorette party at our classy lounge. Invite your friends & party without a reason at our pocket-friendly restaurant. Celebrate every occasion close to your heart, only at Cafe Another Day."/>
+		<meta name="keywords" content=" best cafes in delhi, restaurants in west delhi, best restaurants in janakpuri, cafe and lounge in delhi , group events in janakpuri, best restaurants in west delhi, best cafe lounge in delhi, Best freakshake in delhi, west indian food near me , birthday party venues in delhi, kitty party venues in delhi"/>
+		<meta name="author" content="Cafe Another Day powered by Nibodh Solutions"/>
+		<meta name="robots" content="index,follow"/>
+		<title>About Cafe Another Day | Story of Best Party Place in Janakuri, New Delhi</title>
+      </Helmet>
+		    {/*HEADER ON DESKTOP*/}
+			<nav className="navbar-desktop">
+				<div className="left">
+					<a href="/" className="logo">
+						<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth:"175%"}}/>
+					</a>
+				</div>
+				<ul>
+					<li className="has-children">
+						<Link to="/">
+							Home
+						</Link>
+					</li>
+					<li className="has-children">
+						<Link to="/menu">
+							Menu
+						</Link>
+					</li>
+					<li className="current">
+						<Link to="/about">
+							About
+						</Link>
+					</li>
+					<li className="has-children">
+						<Link to="/gallery">
+							Gallery
+						</Link>
+					</li>
+					<li className="has-children" >
+						<a href="tel:+919540442233">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav className="navbar-mobile">
+				<div className="container">
+					<div className="heading">
+						<div className="left">
+							<a href="#" className="navbar-mobile__toggler">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<a href="/" className="logo">
+							<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth:""}}/>
+						</a>
+					</div>
+				</div>
+				<nav id="main-nav">
+					<ul>
+						<li className="" >
+							<Link to="/home">Home</Link>
+						</li>
+						<li>
+							<Link to="/menu">
+								Menu
+							</Link>
+						</li>
+						<li className="current">
+							<Link to="/about">
+								About
+							</Link>
+						</li>
+						<li>
+							<Link to="/gallery">
+								Gallery
+							</Link>
+						</li>
+						<li className="has-children">
+							<a href="tel:+919540442233">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</nav>
             <div className="page-info set-bg" style={{backgroundImage: `url(${"images2/about-us.webp"})`}}>
 				<div className="section-header">
 					<h1 className="text-white">About us</h1>
@@ -102,7 +191,7 @@ const About = () => {
 			<div className="click-to-top">
 				<span className="lnr lnr-arrow-up"></span>
 			</div>
-        </>
+		</>
     )
 }
 

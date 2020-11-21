@@ -855,7 +855,7 @@ select {
   z-index: 9;
   width: 100%;
   float: left;
-  padding-left: 80px;
+  padding-left: 30px;
   padding-right: 80px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -9449,4 +9449,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+.footerLogo {
+  height: 100px;
+  width: 300px;
+  margin-left:10px;
+  margin-top:33px;
 }

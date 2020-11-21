@@ -1,11 +1,101 @@
 import React from 'react'
-import {Link, withRouter} from 'react-router-dom'
-import {HashLink as HashLink} from 'react-router-hash-link'
+import {Link} from 'react-router-dom'
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
     return (
-        <>
+		<>
+		<Helmet>
+			<meta charset="UTF-8"/>
+			<title>Cafe Another Day | Janakpuri | Party Restaurant</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="description" content="Located in a popular vicinity of Janakpuri of West Delhi, Café Another Day is your destination for great food, drinks, and entertainment."/>
+			<meta name="keywords" content=" best cafes in delhi, restaurants in west delhi, best restaurants in janakpuri, cafe and lounge in delhi , group events in janakpuri, best restaurants in west delhi, best cafe lounge in delhi, Best freakshake in delhi, west indian food near me , birthday party venues in delhi, kitty party venues in delhi"/>
+			<meta name="author" content="Cafe Another Day powered by Nibodh Solutions"/>
+			<meta name="robots" content="index,follow"/>
+		</Helmet>
+		    {/*HEADER ON DESKTOP*/}
+			<header>
+			<nav class="navbar-desktop">
+				<div class="left">
+					<a href="index" class="logo">
+						<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth:"175%"}}/>
+					</a>
+				</div>
+				<ul>
+					<li class="current has-children">
+						<Link to="/">
+							Home
+						</Link>
+					</li>
+					<li class="has-children">
+						<Link to="/menu">
+							Menu
+						</Link>
+					</li>
+					<li>
+						<Link to="/about">
+							About
+						</Link>
+					</li>
+					<li class="has-children">
+						<Link to="/gallery">
+							Gallery
+						</Link>
+					</li>
+					<li class="has-children" >
+						<a href="tel:+919540442233">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<nav class="navbar-mobile">
+				<div class="container">
+					<div class="heading">
+						<div class="left">
+							<a href="#" class="navbar-mobile__toggler">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
+						</div>
+						<a href="index" class="logo">
+							<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth:""}}/>
+						</a>
+					</div>
+				</div>
+				<nav id="main-nav">
+					<ul>
+						<li class="current" >
+							<Link to="/home">Home</Link>
+						</li>
+						<li>
+							<Link to="/menu">
+								Menu
+							</Link>
+						</li>
+						<li>
+							<Link to="/about">
+								About
+							</Link>
+						</li>
+						<li>
+							<Link to="/gallery">
+								Gallery
+							</Link>
+						</li>
+						<li class="has-children">
+							<a href="tel:+919540442233">
+								Contact
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</nav>
+        </header>
         {/*CAROUSEL*/}
 		<div id="carouselExampleIndicators" className="carousel slide mt-0" data-ride="carousel">
   				<ol className="carousel-indicators">
@@ -15,10 +105,10 @@ const Home = () => {
   				</ol>
   			<div className="carousel-inner">
     			<div className="carousel-item active">
-      				<img className="d-block w-100" src="images2/2.jpg" alt="First slide"/>  
+      				<img className="d-block w-100" src="images2/2.jpeg" alt="First slide"/>  
     			</div>
     		<div className="carousel-item">
-      			<img className="d-block w-100" src="images2/6.webp" alt="Second slide"/>
+      			<img className="d-block w-100" src="images2/6.jpeg" alt="Second slide"/>
     		</div>
     		<div class="carousel-item">
       			<img className="d-block w-100" src="images2/7.webp" alt="Third slide"/>

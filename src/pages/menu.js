@@ -1,96 +1,106 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
+import { Helmet } from "react-helmet";
 
 const Menu = () => {
     return (
 		<>
-        <nav className="navbar-desktop fixed-top">
+		<Helmet>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta name="description" content="Our Food Menu has covered it all for you. From Soups to Sweets, Salads to Pasta, Pizza to Sandwich, North Indian to Italian, Veg to Non Veg, Western to Oriental, Rice to Noodles, Tea to Coffee and Desserts to Shakes. Don’t forget to try ours Coolers, Freak Shakes and Smoothies."/>
+			<meta name="keywords" content="best shakes in delhi, best dishes to try in jnakapuri, places to eat in delhi, things to try in delhi, spicy pizza in new delhi, quick bites near me, family dining in new delhi, host party in new delhi, best chicken plates in janakpuri, cafe in janakpuri, exotic dishes in janakpuri, best cafe in new delhi"/>
+			<meta name="author" content="Cafe Another Day powered by Nibodh Solutions"/>
+			<meta name="robots" content="index,follow"/>
+			<title>Menu | Cafe Another Day | Contactless Dining at Janakpuri</title>
+		</Helmet>
+		<nav className="navbar-desktop fixed-top">
 			<ul>
-				<li className="has-children" style={{paddingLeft: 25}}>
-					<Link to="/">
+				<li className="has-children" style={{paddingLeft: 80}}>
+					<a href="/">
 						Home
-					</Link>
+					</a>
 				</li>
 				<li className="has-children">
-					<a href="" className="smoothScroll">
+					<a href="#veg-1">
 						Soups/Salads
 					</a>
 					<div className="sub-menu">
 						<div className="wrapper">
 							<ul>
 								<li>
-									<a href="#soup" className="smoothScroll">Soup</a>
+									<a href="#veg-1" className="smoothScroll">Soups</a>
 								</li>
 								<li>
-									<a href="#salads" className="smoothScroll">Salads</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</li>
-				<li className="has-children">
-					<a href="" className="smoothScroll">
-						Plates
-					</a>
-					<div className="sub-menu">
-						<div className="wrapper">
-							<ul>
-								<li>
-									<a href="#tinyplates" className="smoothScroll">Tiny Plates</a>
-								</li>
-								<li>
-									<a href="#sharedplates" className="smoothScroll">Sharing Plates</a>
+									<a href="#veg-1" className="smoothScroll">Salads</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</li>
 				<li className="has-children">
-					<a href="" className="smoothScroll">
-						Appetizers
+					<a href="#veg-1">
+					Plates
 					</a>
 					<div className="sub-menu">
 						<div className="wrapper">
 							<ul>
 								<li>
-									<a href="#vegappetizers" className="smoothScroll">Veg Appetizers</a>
+									<a href="#veg-1" className="smoothScroll">Sharing Plates</a>
 								</li>
 								<li>
-									<a href="#nonvegappetizers" className="smoothScroll">Non Veg Appetizers</a>
+									<a href="#veg-1" className="smoothScroll">Tiny Plates</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</li>
 				<li className="has-children">
-					<a href="" className="smoothScroll">
-						Burgers/Sandwiches
+					<a href="#veg-1">
+					Appetizers
 					</a>
 					<div className="sub-menu">
 						<div className="wrapper">
 							<ul>
 								<li>
-									<a href="#burgers" className="smoothScroll">Burgers</a>
+									<a href="#veg-1" className="smoothScroll">Veg Appetizers</a>
 								</li>
 								<li>
-									<a href="#sandwiches" className="smoothScroll">Sandwiches</a>
+									<a href="#veg-1" className="smoothScroll">Non Veg Appetizers</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</li>
 				<li className="has-children">
-					<a href="" className="smoothScroll">
-						Italian
+					<a href="#veg-1">
+					Burgers/Sandwiches
 					</a>
 					<div className="sub-menu">
 						<div className="wrapper">
 							<ul>
 								<li>
-									<a href="#pizza" className="smoothScroll">Pizza</a>
+									<a href="#veg-1" className="smoothScroll">Burgers</a>
 								</li>
 								<li>
-									<a href="#pasta" className="smoothScroll">Pasta</a>
+									<a href="#veg-1" className="smoothScroll">Sandwiches</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li className="has-children">
+					<a href="#veg-1">
+					Italian
+					</a>
+					<div className="sub-menu">
+						<div className="wrapper">
+							<ul>
+								<li>
+									<a href="#veg-1" className="smoothScroll">Pizza</a>
+								</li>
+								<li>
+									<a href="#veg-1" className="smoothScroll">Pasta</a>
 								</li>
 							</ul>
 						</div>
@@ -136,7 +146,7 @@ const Menu = () => {
 						<div className="wrapper">
 							<ul>
 								<li>
-									<a href="#desserts" className="smoothScroll">Desserts</a>
+									<a href="#shakes-1" className="smoothScroll">Desserts</a>
 								</li>
 								<li>
 									<a href="#shakes-1" className="smoothScroll">Shakes</a>
@@ -154,7 +164,7 @@ const Menu = () => {
 									<a href="#tea-5" className="smoothScroll">Tea</a>
 								</li>
 								<li>
-									<a href="#tea-5" claclassNamess="smoothScroll">Ice Tea</a>
+									<a href="#tea-5" className="smoothScroll">Ice Tea</a>
 								</li>
 								<li>
 									<a href="#coffee-7" className="smoothScroll">Coffee</a>
@@ -164,12 +174,11 @@ const Menu = () => {
 								</li>
 							</ul>
 						</div>
-                </div>
-                </li>
+					</div>
+				</li>
 			</ul>
 		</nav>
 
-		{/*HEADER ON MOBILE*/}
 		<nav className="navbar-mobile fixed-top">
 			<div className="container">
 				<div className="heading">
@@ -180,70 +189,85 @@ const Menu = () => {
 							<span></span>
 						</a>
 					</div>
-					<a href="index.php" className="logo" style={{maxWidth:"30%"}}>
-						<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth:""}}/>
+					<a href="/" className="logo" style={{maxWidth: "30%"}}>
+						<img src="images2/logo.webp" alt="Cafe Another Day" style={{maxWidth: ""}}/>
 					</a>
 				</div>
 			</div>
 			<nav id="main-nav">
 				<ul>
 					<li className="current">
-						<a href="menu.php">Menu</a>
+						<a href="/menu">Menu</a>
 					</li>
 					<li className="has-children">
-						<a href="index.php">
+						<a href="/">
 							Home
 						</a>
 					</li>
 					<li className="has-children">
-						<a href="#section-1" class="smoothScroll">
-							Soups
+						<a href="">
+							Soups/Salad
 						</a>
+						<ul>
+							<li>
+								<a href="#veg-1" className="smoothScroll">Soups</a>
+							</li>
+							<li>
+								<a href="#nveg-2" className="smoothScroll">Salad</a>
+							</li>
+						</ul>
 					</li>
 					<li className="has-children">
-						<a href="#section-2" className="smoothScroll">
-							Salads
+						<a href="">
+							Plates
 						</a>
+						<ul>
+							<li>
+								<a href="#veg-1" className="smoothScroll">Sharing Plates</a>
+							</li>
+							<li>
+								<a href="#nveg-2" className="smoothScroll">Tiny Plates</a>
+							</li>
+						</ul>
 					</li>
 					<li className="has-children">
-						<a href="#section-3" className="smoothScroll">
-							Tiny Plates
+						<a href="">
+							Appetizers
 						</a>
+						<ul>
+							<li>
+								<a href="#veg-1" className="smoothScroll">Veg Appetizers</a>
+							</li>
+							<li>
+								<a href="#nveg-2" className="smoothScroll">Non Veg Appetizers</a>
+							</li>
+						</ul>
 					</li>
 					<li className="has-children">
-						<a href="#section-4" className="smoothScroll">
-							Sharing Plates
+						<a href="">
+							Burgers/Sandwiches
 						</a>
+						<ul>
+							<li>
+								<a href="#veg-1" className="smoothScroll">Burgers</a>
+							</li>
+							<li>
+								<a href="#nveg-2" className="smoothScroll">Sandwiches</a>
+							</li>
+						</ul>
 					</li>
 					<li className="has-children">
-						<a href="#section-12" className="smoothScroll">
-							Veg Appetizers
+						<a href="">
+							Italian
 						</a>
-					</li>
-					<li className="has-children">
-						<a href="#section-13" className="smoothScroll">
-							Non Veg Appetizers
-						</a>
-					</li>
-					<li className="has-children">
-						<a href="#section-5" className="smoothScroll">
-							Burgers
-						</a>
-					</li>
-					<li className="has-children">
-						<a href="#section-6" className="smoothScroll">
-							Sandwiches
-						</a>
-					</li>
-					<li className="has-children">
-						<a href="#section-7" className="smoothScroll">
-							Pizza
-						</a>
-					</li>
-					<li className="has-children">
-						<a href="#section-8" className="smoothScroll">
-							Pasta
-						</a>
+						<ul>
+							<li>
+								<a href="#veg-1" className="smoothScroll">Pizza</a>
+							</li>
+							<li>
+								<a href="#nveg-2" className="smoothScroll">Pasta</a>
+							</li>
+						</ul>
 					</li>
 					<li className="has-children">
 						<a href="">
@@ -274,20 +298,18 @@ const Menu = () => {
 						</ul>
 					</li>
 					<li className="has-children">
-						<a href="#section-10" className="smoothScroll">
-							Delicious Desserts
-						</a>
-					</li>
-					<li className="has-children">
 						<a href="" className="smoothScroll">
-							Beverages
+						Desserts/Beverages
 						</a>
 						<ul>
+							<li className="current">
+								<a href="#shakes-1" className="smoothScroll">Desserts</a>
+							</li>
 							<li className="current">
 								<a href="#shakes-1" className="smoothScroll">Shakes</a>
 							</li>
 							<li>
-								<a href="#smoothies-2" classNamelass="smoothScroll">Smoothies</a>
+								<a href="#smoothies-2" className="smoothScroll">Smoothies</a>
 							</li>
 							<li>
 								<a href="#freak-3" className="smoothScroll">Freak Shakes</a>
@@ -313,23 +335,22 @@ const Menu = () => {
 			</nav>
 		</nav>
 
-		{/*PAGE INFO*/}
-		<div className="page-info set-bg" style={{backgroundImage: `url(${"images2/8.webp"})`}}>
+	<main>
+		<section className="page-info set-bg" style={{backgroundImage: `url(${"images2/8.webp"})`}}>
 			<div id="section-1" className="section-header">
 				<h1 className="text-white">Our menu</h1>
 				<span>~ See what we offer ~</span>
 			</div>
-		</div>
+		</section>
 
-		{/*OUR MENU*/}
-		<div className="our-menu section-primary pb-113">
+		<section className="our-menu section-primary pb-113">
 			<div className="container">
 				<div className="row justify-content-between">
 					<div className="col-md-6">
-						<div id="soup" className="our-menu-col left">
+						<div className="our-menu-col left">
 							<div className="heading">
 								<h3>Soups</h3>
-								<span class="icon">
+								<span className="icon">
 									<img src="images2/soup.webp" alt="Soup"/>
 								</span>
 							</div>
@@ -372,7 +393,7 @@ const Menu = () => {
 								</div>
 								<div className="menu-item">
 									<h5>
-										<a>Hot and Sour Classic Soup</a>
+										<a>Hot and Sour classNameic Soup</a>
 										<span className="dots"></span>
 										<span className="price">
 											<span className="number">159/189</span>
@@ -418,7 +439,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="salads" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col right">
 							<div className="heading">
 								<h3>Salads</h3>
@@ -439,7 +460,7 @@ const Menu = () => {
 								</div>
 								<div className="menu-item">
 									<h5>
-										<a>Classic Caesar</a>
+										<a>classNameic Caesar</a>
 										<span className="dots"></span>
 										<span className="price">
 											<span className="number">255/295</span>
@@ -447,7 +468,7 @@ const Menu = () => {
 									</h5>
 									<p>(Croutons, Fresh Greens and Caesar Dressing)</p>
 								</div>
-								<div viewclass="menu-item">
+								<div className="menu-item">
 									<h5>
 										<a>Roasted Beetroot</a>
 										<span className="dots"></span>
@@ -461,7 +482,7 @@ const Menu = () => {
 									<h5>
 										<a>Nutrition Powerhouse</a>
 										<span className="dots"></span>
-										<span classNamess="price">
+										<span className="price">
 											<span className="number">325/375</span>
 										</span>
 									</h5>
@@ -510,7 +531,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="tinyplates" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col mb-md-0 left">
 							<div className="heading">
 								<h3>Tiny Plates</h3>
@@ -548,7 +569,7 @@ const Menu = () => {
 										<span className="icon">
 											<img src="images2/veg.webp" alt=""/>
 										</span>
-										<a>Classic Bruschetta</a>
+										<a>classNameic Bruschetta</a>
 										<span className="dots"></span>
 										<span className="price">
 											<span className="number">209</span>
@@ -587,7 +608,7 @@ const Menu = () => {
 										<span className="icon">
 											<img src="images2/veg.webp" alt=""/>
 										</span>
-										<a>Classic Cheese Poutine</a>
+										<a>classNameic Cheese Poutine</a>
 										<span className="dots"></span>
 										<span className="price">
 											<span className="number">265</span>
@@ -619,7 +640,7 @@ const Menu = () => {
 										</span>
 									</h5>
 								</div>
-								<div class="menu-item">
+								<div className="menu-item">
 									<h5>
 										<span className="icon">
 											<img src="images2/veg.webp" alt=""/>
@@ -682,7 +703,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="sharedplates" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col right">
 							<div className="heading">
 								<h3>Sharing Plates</h3>
@@ -735,14 +756,14 @@ const Menu = () => {
 										<a>Salt and Pepper Veggie, Falafel<br/>Balls, Cheesy Fries, Panko Fried<br/>Paneer, Cheesy Onion Rings, Caesar Salad</a>
 										<span className="dots"></span>
 										<span className="price">
-											<span class="number">889/799</span>
+											<span className="number">889/799</span>
 										</span>
 									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div id="vegappetizers" className="col-md-6 mt-5">
+					<div className="col-md-6 mt-5">
 						<div className="our-menu-col left">
 							<div className="heading">
 								<h3>Veg Appetizers</h3>
@@ -970,7 +991,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="nonvegappetizers" className="col-md-6 mt-5">
+					<div className="col-md-6 mt-5">
 						<div className="our-menu-col right">
 							<div className="heading">
 								<h3>Non Veg Appetizers</h3>
@@ -1199,7 +1220,7 @@ const Menu = () => {
 						</div>
 					</div>
 
-					<div id="burgers" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col mb-md-0 left">
 							<div className="heading">
 								<h3>Burgers</h3>
@@ -1272,7 +1293,7 @@ const Menu = () => {
 						</div>
 					</div>
 
-					<div id="sandwiches" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col ml-0 right">
 							<div className="heading">
 								<h3>Sandwiches</h3>
@@ -1364,7 +1385,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="pizza" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col left">
 							<div className="heading">
 								<h3>Pizza</h3>
@@ -1446,7 +1467,7 @@ const Menu = () => {
 							</div>
 						</div>
 					</div>
-					<div id="pasta" className="col-md-6">
+					<div className="col-md-6">
 						<div className="our-menu-col mb-5 right">
 							<div className="heading">
 								<h3>Pasta</h3>
@@ -2090,7 +2111,7 @@ const Menu = () => {
 						</div>
 					</div>
 
-					<div id="desserts" className="col-md-6 mt-5">
+					<div className="col-md-6 mt-5">
 						<div className="our-menu-col right">
 							<div className="heading">
 								<h3>Delicious Desserts</h3>
@@ -2698,8 +2719,8 @@ const Menu = () => {
 
 				</div>
 			</div>
-		</div>
-		<div className="section-primary section-form pb-10" style={{paddingTop:"5%", paddingBottom:"1%"}}>
+		</section>
+		<section className="section-primary section-form pb-10" style={{paddingTop: "5%", paddingBottom: "175%"}}>
 			<div className="container">
 				<div id="section-1" className="row justify-content-center">
 					<div className="col-md-6">
@@ -2710,14 +2731,16 @@ const Menu = () => {
 							</div>
 							<form action="#">
 								<div className="btn-holder">
-									<a href="https://bit.ly/3mQQAFZ" target="_blank" className="au-btn round au-btn--hover has-bg">Give a Review</a>
+									<a href="https://bit.ly/3mQQAFZ" target="_blank" class="au-btn round au-btn--hover has-bg">Give a Review</a>
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+	</main>
+
 
 		
 		{/*CLICK ON TOP*/}
